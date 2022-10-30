@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main(){
+char a[10][50] = {"ноль", "один", "два", "три", "четыре", "пять",
+"шесть", "семь", "восемь", "девять"};
+int b;
+cin >> b;
+cout << a[b] << endl;
+return 0;
+}
