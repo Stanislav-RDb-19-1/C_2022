@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+class CreditCard{
+public:
+int Number;
+float Balance;
+CreditCard(int Num, float Bal){
+this->Number=Num;
+this->Balance=Bal;
+}
+void Put(float V){
+this->Balance+=V;
+}
+void Take(float V){
+if(V>this->Balance) {
+cout<<"Sorry, not enough money!"<<endl;
+return;}
+this->Balance-=V;
+}
+};
+void Transfer(CreditCard *a, CreditCard *b, float V){
+if(a==b) {
+cout<<"They are same cards! Impossible to transfer money"<<endl;
+return;
+}
+if(a->Balance<V) { cout<<"Not enough money in card"<<endl; return;}
+a->Balance-= V;
+b->Balance+= V;
+return;
+}
+int main(int argc, char** argv) {
+CreditCard a(10, 1234);
+CreditCard b(20, 2345);
+Transfer(&a, &b, 20);
+cout<<a.Balance<<endl;
+cout<<b.Balance<<endl;
+return 0;
+}
