@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class CreditCard{
+public:
+int Number;
+float Balance;
+CreditCard(int Num, float Bal){
+this->Number=Num;
+this->Balance=Bal;
+}
+void Put(float V){
+this->Balance+=V;
+}
+void Take(float V){
+if(V>this->Balance) {
+cout << "Sorry, not enough money!" << endl;
+return;}
+this->Balance-=V;
+}
+};
