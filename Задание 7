@@ -1,1 +1,32 @@
+#include <iostream>
+using namespace std;
+class Bucket {
+public:
+int volume, used;
+Bucket(float a, float b){
+volume=a; used=b;
+}
+void flush(){
+used = 0;
+}
+float fill(float a){
+used+=a;
+if(used>volume) {
+float t=used-volume;
+used=volume;
+return t;
+}
+return 0;
+}
 
+};
+int main(){
+Bucket test_01(12, 3);
+cout<<"1) " <<test_01.volume<<", " <<test_01.used<<"\n"; // 12, 3
+int rest=test_01.fill(14);
+cout<<"2) "<<test_01.used<<", "<<rest<<"\n"; // 12, 5
+test_01.flush();
+rest=test_01.fill(8);
+cout<<"3) "<<test_01.used<<", "<<rest<<"\n"; // 8, 0
+return 0;
+}
