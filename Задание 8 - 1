@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+int main(){
 class CreditCard{
 public:
 int Number;
@@ -13,8 +14,9 @@ this->Balance+=V;
 }
 void Take(float V){
 if(V>this->Balance) {
-cout << "Sorry, not enough money!" << endl;
+cout<<"Sorry, not enough money!"<<endl;
 return;}
 this->Balance-=V;
 }
+};
 };
