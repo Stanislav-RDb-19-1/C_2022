@@ -12,9 +12,4 @@ while(t<=B){
 test << 3*t++ << endl;
 }
 return 0;
-cin >> A >> B;
-ofstream output("output");
-for(int i=A; i<=B; i++) output << 3*i << "\n";
-output.close();
-return 0;
 }
