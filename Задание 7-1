@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+  void Square(char a, int b){
+      for(int num1 = 0; num1 < b; num1++){
+        for(int num2 = 0; num2 < b; num2++){
+cout«a«' ';
+}
+cout«endl;
+}
+}
+
+
+int main(){
+  char A;
+  int B;
+      cin»A»B;
+        Square(A, B);
+cout«endl;
+
+return 0;
+}
