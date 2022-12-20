@@ -8,7 +8,6 @@ char Reserved[26];
     for(int num1 = 1; num1 < 26; num1++){
     Reserved[num1] = Reserved[num1 - 1] - 1;
 }
-
         for(int num2 = 0; num2 < 26; num2++) cout«Reserved[num2]«' ';
 
 return 0;
