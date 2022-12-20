@@ -1,10 +1,21 @@
 #include <iostream>
 using namespace std;
+
 int main(){
-char a[10][50] = {"ноль", "один", "два", "три", "четыре", "пять",
-"шесть", "семь", "восемь", "девять"};
-int b;
-cin >> b;
-cout << a[b] << endl;
+
+char Reserved[26];
+  Reserved[0] = 'z';
+    for(int num1 = 1; num1 < 26; num1++){
+      Reserved[num1] = Reserved[num1 - 1] - 1;
+}
+         for(int num2 = 0; num2 < 26; num2++) cout«Reserved[num2]«' ';
+          cout«endl;
+
+char *s; s = Reserved;
+    for(int num3 = 0; num3 < 26; num3++){
+      Reserved[num3] = char (*(s + num3) - 32);
+      cout«Reserved[num3]«' ';
+}
+cout«endl;
 return 0;
 }
