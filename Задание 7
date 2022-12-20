@@ -10,7 +10,6 @@ cout«endl;
 }
 }
 
-
 int main(){
   char A;
   int B;
