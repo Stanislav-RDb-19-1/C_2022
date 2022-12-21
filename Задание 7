@@ -4,18 +4,21 @@ using namespace std;
   void Square(char a, int b){
       for(int num1 = 0; num1 < b; num1++){
         for(int num2 = 0; num2 < b; num2++){
-cout«a«' ';
+cout<<a<<' ';
 }
-cout«endl;
+cout<<endl;
 }
 }
 
 int main(){
-  char A;
+ char A;
   int B;
-      cin»A»B;
-        Square(A, B);
-cout«endl;
+  cout <<"Введите A" << endl;
+     cin >> A;
+     cout <<"Введите B" << endl;
+     cin >> B;
+         Square(A, B);
+cout<<endl;
 
 return 0;
 }
