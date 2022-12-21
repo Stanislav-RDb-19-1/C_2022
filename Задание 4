@@ -9,7 +9,7 @@ int main(){
     if (input.is_open()){
      int n = 1;
       while (getline(input, number)){
-      cout«n«") "«number«endl;
+      cout<<n<<") "<<number<<endl;
       n++;
 }
 }
