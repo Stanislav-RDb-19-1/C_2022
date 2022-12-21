@@ -11,13 +11,14 @@ int main(){
   char A; 
   cout <<"Введите A" << endl;
   cin>>A;
+  cout<<endl;
     int num1;
       if(A >= '0' & A <= '9') {
          num1 = A - '0';
-cout<<Rise(num1)<<endl;
+cout<<"Получаем из числа "<<A<<" число "<<Rise(num1)<<endl;
 }
       else if(A >= 'a' & A <= 'z')
-cout<<Rise(A)<<endl;
+cout<<"Получаем из буквы "<<A<<" букву "<<Rise(A)<<endl;
 
 return 0;
 }
