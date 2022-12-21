@@ -18,7 +18,6 @@ int main(){
      cout <<"Введите B" << endl;
      cin >> B;
          Square(A, B);
-cout<<endl;
 
 return 0;
 }
