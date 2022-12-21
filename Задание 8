@@ -8,7 +8,9 @@ using namespace std;
     return A * 10;
 }
 int main(){
-  char A; cin>>A;
+  char A; 
+  cout <<"Введите A" << endl;
+  cin>>A;
     int num1;
       if(A >= '0' & A <= '9') {
          num1 = A - '0';
