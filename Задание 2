@@ -7,7 +7,7 @@ int main(){
      
           for(num1=100, num2=1; num1>=-100; num1=num1-3, num2+=3){
           
-          cout<<num2<<"\t"<<num1<<endl;
+          cout<<num2<<") "<<num1<<endl;
           }
      return 0;
 }
