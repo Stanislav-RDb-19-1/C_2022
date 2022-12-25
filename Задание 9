@@ -1,22 +1,36 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
-void print(int a){
-cout << a << endl;
+
+class Bus {
+public:
+int Number;
+int People;
+
+void Add_Persons(int n){
+People += n;
 }
-void print(float a){
-cout << a << endl;
+
+void Remove_Persons(int n){
+if (People >= n) People -= n;
 }
-void print(char a){
-cout << a << endl;;
+
+const Bus operator!(){
+cout<<"Номер автобуса"<<' '<<Number<<endl;
+cout<<"Количество  людей"<<' '<<People<<endl;
 }
-void print(int a, int b){
-cout << a << ", " << b << endl;
-}
-int main(){
-float a=1.1;
-print(10);
-print(a);
-print('a');
-print(1,2);
+};
+
+int main () {
+
+Bus test_1;
+test_1.Number = 7;
+test_1.People = 13;
+
+test_1.Add_Persons(2);
+test_1.Remove_Persons(20);
+test_1.Remove_Persons(8);
+test_1.operator!();
+
 return 0;
 }
