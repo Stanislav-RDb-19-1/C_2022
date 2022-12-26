@@ -15,7 +15,7 @@ char Reserved[26];
 char *s; s = Reserved;
     for(int num3 = 0; num3 < 26; num3++){
       Reserved[num3] = char (*(s + num3) - 32);
-      cout<<Reserved[num3]<<' ';
+      cout<<*(s+num3)<<' ';
 }
 cout<<endl;
 return 0;
