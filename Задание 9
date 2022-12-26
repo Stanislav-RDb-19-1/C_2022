@@ -14,8 +14,7 @@ People += n;
 void Remove_Persons(int n){
 if (People >= n) People -= n;
 }
-
-const Bus operator!(){
+ Bus operator!(){
 cout<<"Номер автобуса"<<' '<<Number<<endl;
 cout<<"Количество  людей"<<' '<<People<<endl;
 }
