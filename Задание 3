@@ -5,11 +5,11 @@ using namespace std;
 
 int main(){
 
-    ofstream output ("numbers.txt");
+    ofstream fail ("numbers.txt");
 
-    if (output.is_open()){
+    if (fail.is_open()){
        for(int num1 = 0 ; num1 <= 20 ; num1++)
-        output<<pow(2, num1)<<endl;
+        fail<<pow(2, num1)<<endl;
 }
 
     else cout << "Unable to open output file";
