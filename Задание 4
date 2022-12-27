@@ -4,11 +4,11 @@ using namespace std;
 
 int main(){
 
-    ifstream input ("numbers.txt");
+    ifstream fail ("numbers.txt");
     string number;
-    if (input.is_open()){
+    if (fail.is_open()){
      int num2 = 1;
-      while (getline(input, number)){
+      while (getline(fail, number)){
       cout<<num2<<") "<<number<<endl;
       num2++;
 }
