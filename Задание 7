@@ -11,14 +11,14 @@ cout<<endl;
 }
 
 int main(){
- char A;
-  int B;
-  cout <<"Введите A" << endl;
-     cin >> A;
-     cout <<"Введите B" << endl;
-     cin >> B;
+ char S;
+  int N;
+  cout <<"Введите S" << endl;
+     cin >> S;
+     cout <<"Введите N" << endl;
+     cin >> N;
         cout<<endl;
-           Square(A, B);
+           Square(S, N);
 
 return 0;
 }
